@@ -136,7 +136,7 @@ namespace Office
       if (workersLB.SelectedItem != null)
       {
         editWorker = (IParametrizable)WorkersList.Instance[workersLB.SelectedIndex];
-        LoadParameters(paramStack, editWorker.GetParam(new ControlParameters())/*new ControlParameters().GetParam(editWorker)*/, editWorker.GetType());
+        LoadParameters(paramStack, editWorker.GetParam(new ControlParameters()), editWorker.GetType());
         editGrid.Visibility = Visibility.Visible;
       }
     }
@@ -350,7 +350,7 @@ namespace Office
     {
       if (((TextBox)controlList[1][0]).Text != "")
       {
-        List<Parameter> paramList = editWorker.GetParam(new ControlParameters());//new ControlParameters().GetParam(editWorker);
+        List<Parameter> paramList = editWorker.GetParam(new ControlParameters());
         try
         {
           for (int i = 0; i < paramList.Count; i++)
