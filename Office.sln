@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Office", "Office\Office.csproj", "{BE659420-FBFA-435C-B04F-3D1DB60C1D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromXMLtoJSON", "FromXMLtoJSON\FromXMLtoJSON.csproj", "{C45F8A41-4488-4F2D-AA87-A3BBFAC11176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromJSONtoXML", "FromJSONtoXML\FromJSONtoXML.csproj", "{34CD90F9-9E56-48B3-A558-9089ADCD4AC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE659420-FBFA-435C-B04F-3D1DB60C1D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE659420-FBFA-435C-B04F-3D1DB60C1D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE659420-FBFA-435C-B04F-3D1DB60C1D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE659420-FBFA-435C-B04F-3D1DB60C1D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C45F8A41-4488-4F2D-AA87-A3BBFAC11176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45F8A41-4488-4F2D-AA87-A3BBFAC11176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45F8A41-4488-4F2D-AA87-A3BBFAC11176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45F8A41-4488-4F2D-AA87-A3BBFAC11176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34CD90F9-9E56-48B3-A558-9089ADCD4AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34CD90F9-9E56-48B3-A558-9089ADCD4AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34CD90F9-9E56-48B3-A558-9089ADCD4AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34CD90F9-9E56-48B3-A558-9089ADCD4AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

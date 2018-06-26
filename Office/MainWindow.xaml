@@ -1,0 +1,71 @@
+﻿<Window x:Class="Office.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Office"
+        mc:Ignorable="d"
+        Title="Office" Height="450" Width="600" Background="#FFECFFB8">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="25"/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Menu Grid.Row="0" VerticalAlignment="Top">
+      <MenuItem x:Name="fileMI" Header="File">
+        <MenuItem Header="Save">
+          <MenuItem x:Name="xmlSave" Header="XML" Click="xmlSave_Click"/>
+          <MenuItem x:Name="binSave" Header="Bin" Click="binSave_Click"/>
+          <MenuItem x:Name="jsonSave" Header="JSON" Click="jsonSave_Click"/>
+        </MenuItem>
+        <MenuItem x:Name="open" Header="Open" Click="open_Click"/>
+      </MenuItem>
+    </Menu>
+    <Grid Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.70*"/>
+        <ColumnDefinition Width="0.30*"/>
+      </Grid.ColumnDefinitions>
+      <Grid Grid.Column="1">
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+          <RowDefinition Height="0.2*"/>
+          <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="workersLB" Margin="10 5" MouseDoubleClick="workersLB_MouseDoubleClick"/>
+        <Grid Grid.Row="1">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition Width="0.4*"/>
+          </Grid.ColumnDefinitions>
+          <ComboBox x:Name="typeLB" Margin="5 15"/>
+          <Button x:Name="addBtn" Content="Add" Grid.Column="1" Margin="5 15" Click="addBtn_Click"/>
+        </Grid>
+        <Button x:Name="delBtn" Grid.Row="2" Content="Delete" Margin="10 15" Click="delBtn_Click"/>
+      </Grid>
+      <Grid x:Name="editGrid" Grid.Column="0">
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+          <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="0" Margin="10" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+          <StackPanel x:Name="paramStack"/>
+        </ScrollViewer>
+        <Grid Grid.Row="1">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition Width="0.4*"/>
+          </Grid.ColumnDefinitions>
+          <Grid x:Name="saveCancelGrid" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition/>
+              <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="saveBtn" Grid.Column="0" Content="Save" Margin="2 4" Click="saveBtn_Click"/>
+            <Button x:Name="cancelBtn" Grid.Column="1" Content="Cancel" Margin="2 4" Click="cancelBtn_Click"/>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+  </Grid>
+</Window>
